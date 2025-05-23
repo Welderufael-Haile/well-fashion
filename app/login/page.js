@@ -98,7 +98,7 @@ export default function Login() {
         <button type="submit" className="bg-blue-500  text-white px-4 py-2 rounded-lg">Login</button>
         </div>
       </form>
-      <p>Don't have an account? <a href="/register" className="text-blue-500 font-bold ">Sign Up</a></p>
+      <p>Don&apos;t have an account? <a href="/register" className="text-blue-500 font-bold ">Sign Up</a></p>
      </div>
     </div>
   );
