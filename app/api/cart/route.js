@@ -5,7 +5,7 @@ export async function GET(request) {
     return new Response(JSON.stringify({ cartItems: [] }), {
       headers: { "Content-Type": "application/json" },
     });
-  }
+}
   
   export async function POST() {
     // Handle POST request
@@ -17,7 +17,7 @@ export async function GET(request) {
   }
   
 //const SomeComponent = () => {
-  const {  addToCart } = useCart();
+  const {  addToCart } = useCart();{
 
   const handleAddToCart = (item) => {
     addToCart(item);
@@ -28,4 +28,4 @@ export async function GET(request) {
       <button onClick={() => handleAddToCart(someItem)}>Add to Cart</button>
     </div>
   );
-
+}

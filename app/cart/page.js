@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Logout from ".././admin/componenets/Logout";
-import dynamic from "next/dynamic";
+//import dynamic from "next/dynamic";
 
 // const GoogleMapReact = dynamic(() => import("google-map-react"), { ssr: false });
 
