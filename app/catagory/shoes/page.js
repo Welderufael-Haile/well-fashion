@@ -5,7 +5,7 @@ import { useCart } from "../../context/CartContext";
 import Link from "next/link";
 
 export default function MensClothing() {
-  const [products, setProducts] = useState([]);
+  //const [products, setProducts] = useState([]);
   const { addToCart } = useCart();
 
   useEffect(() => {

@@ -40,10 +40,10 @@ export default function CartPage() {
     setOrderDetails({ ...orderDetails, [e.target.name]: e.target.value });
   };
 
-  const handleMapClick = ({ lat, lng }) => {
+  {/*const handleMapClick = ({ lat, lng }) => {
     const location = `Lat: ${lat}, Lng: ${lng}`;
     setOrderDetails({ ...orderDetails, mapAddress: location });
-  };
+  }; */}
 
   const handleOrderSubmit = async (e) => {
     e.preventDefault();
