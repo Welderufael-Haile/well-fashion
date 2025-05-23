@@ -1,4 +1,4 @@
-import { useCart } from '../../context/CartContext';
+{/*import { useCart } from '../../context/CartContext';
 // app/api/cart/route.js (if using the App Router)
 export async function GET(request) {
     // Handle GET request
@@ -17,7 +17,7 @@ export async function GET(request) {
   }
   
 //const SomeComponent = () => {
-  const {  addToCart } = useCart();{
+  const {  addToCart } = useCart();
 
   const handleAddToCart = (item) => {
     addToCart(item);
@@ -28,4 +28,5 @@ export async function GET(request) {
       <button onClick={() => handleAddToCart(someItem)}>Add to Cart</button>
     </div>
   );
-}
+
+*/}
