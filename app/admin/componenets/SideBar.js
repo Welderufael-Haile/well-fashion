@@ -9,7 +9,7 @@ export default function SideBar() {
                 <li><Link  className="hover:text-blue-400 " href="/admin/mensshoes">mens shoes</Link></li>
                 <li><Link  className="hover:text-blue-400 " href="/admin/addwomen"> womens</Link></li>
                 <li><Link  className="hover:text-blue-400" href="/admin/womensshoes"> womenshoes</Link></li>
-                <li><Link  className="hover:text-blue-400" href="/admin/addchildren">Children's</Link></li>
+                <li><Link  className="hover:text-blue-400" href="/admin/addchildren">Children&apos;s</Link></li>
                 <li><Link className="hover:text-blue-400" href="/admin/orderpage">Orderd-pge</Link></li>
                 <li><Link  className="hover:text-blue-400" href="/admin/message">Client-messages</Link></li>
               

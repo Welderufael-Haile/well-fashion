@@ -7,17 +7,17 @@ export async function GET(request) {
     });
   }
   
-  export async function POST(request) {
+  export async function POST() {
     // Handle POST request
-    const { item } = await request.json();
+    // const { item } = await request.json();
     // Logic to add item to the cart
     return new Response(JSON.stringify({ success: true }), {
       headers: { "Content-Type": "application/json" },
     });
   }
   
-const SomeComponent = () => {
-  const { cart, addToCart } = useCart();
+//const SomeComponent = () => {
+  const {  addToCart } = useCart();
 
   const handleAddToCart = (item) => {
     addToCart(item);
@@ -28,4 +28,4 @@ const SomeComponent = () => {
       <button onClick={() => handleAddToCart(someItem)}>Add to Cart</button>
     </div>
   );
-};
+

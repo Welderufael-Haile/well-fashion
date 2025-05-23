@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import Logout from ".././admin/componenets/Logout";
 import dynamic from "next/dynamic";
 
-const GoogleMapReact = dynamic(() => import("google-map-react"), { ssr: false });
+// const GoogleMapReact = dynamic(() => import("google-map-react"), { ssr: false });
 
 export default function CartPage() {
   const { data: session, status } = useSession();

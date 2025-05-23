@@ -15,7 +15,7 @@ export default function WomensClothing() {
 
   return (
     <div className="p-4dark:bg-gray-800 dark:text-white">
-      <h1 className="text-3xl font-bold mb-4">Women's Clothing</h1>
+      <h1 className="text-3xl font-bold mb-4">Women&#39;s Clothing</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div key={product.id} className="border p-4 rounded-lg shadow-md">
