@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useCart } from "./context/CartContext";
 import Link from "next/link";
+import Image from "next/image";
 
 // import CatagoryList from "../components/CatagoryList"
 export default function HomePage() {
@@ -24,7 +25,7 @@ export default function HomePage() {
         {products.map((product) => (
           <div key={product.id} className="border p-4 rounded-lg shadow-lg">
             <Link href={`/product/${product.id}`}>
-              <img
+              <Image
                 src={product.image}
                 alt={product.title}
                 className="h-40 mx-auto cursor-pointer"

@@ -1,23 +1,9 @@
-"use client";
 
-import { useSession } from "next-auth/react";
-import React from "react";
-const userprofile = () => {
-  const { data: session } = useSession(); // Get session data
+import Profile from "../components/Profile";
+const page = () => {
   return (
-    <div>
-      <h1>user profile</h1>
-      {session ? (
-        <>
-          <span className="text-white">
-            {session.user?.name} ({session.user?.email})
-          </span>
-        </>
-      ) : (
-        <span className="text-white">Not logged in</span>
-      )}
-    </div>
-  );
+    <div><Profile></Profile></div>
+  )
 }
 
-export default userprofile
+export default page
