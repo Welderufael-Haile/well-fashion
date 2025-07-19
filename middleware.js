@@ -23,5 +23,5 @@ export function middleware(req) {
 
 // Apply middleware to specific routes
 export const config = {
-  matcher: ["/caret"], // Add your protected routes here
+ // matcher: ["/caret"], // Add your protected routes here
 };
