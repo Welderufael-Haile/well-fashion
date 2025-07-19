@@ -1,20 +1,13 @@
 
 
 "use client";
-import { useEffect, useState } from "react";
-import { useCart } from "../../context/CartContext";
-import Link from "next/link";
-import Image from "next/image";
+
+
 
 export default function MensClothing() {
-  const [products, setProducts] = useState([]);
-  const { addToCart } = useCart();
+  
 
-  useEffect(() => {
-    fetch("https://dummyjson.com/products/search?q=shoes")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  
 
   return (
     <div className="p-4">

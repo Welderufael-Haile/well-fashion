@@ -1,7 +1,7 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-
+import React from "react";
 const userprofile = () => {
   const { data: session } = useSession(); // Get session data
   return (
