@@ -11,7 +11,8 @@ const db = mysql.createPool({
   database: "fashion",
 });
 
-const handler = NextAuth({
+// ✅ Exported for client/server use
+export const authOptions = {
   providers: [
     Credentials({
       name: "Credentials",
@@ -44,9 +45,7 @@ const handler = NextAuth({
       return token;
     },
     async session({ session, token }) {
-      if (token) {
-        session.user.role = token.role;
-      }
+      session.user.role = token.role;
       return session;
     },
   },
@@ -54,9 +53,10 @@ const handler = NextAuth({
     strategy: "jwt",
   },
   pages: {
-    signIn: "/login", // optional: redirect to your custom login page
+    signIn: "/login", // optional custom login page
   },
-});
+};
 
-export const GET = handler;
-export const POST = handler;
+// ✅ Use authOptions in NextAuth
+const handler = NextAuth(authOptions);
+export { handler as GET, handler as POST };

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function Register() {
   const router = useRouter();
-  const [user, setUser] = useState({ name: "", email: "", password: "" });
+  const [user, setUser] = useState({ name: "", email: "", password: "", role: "user" });
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
@@ -42,6 +42,17 @@ export default function Register() {
         <input type="email" name="email" placeholder="Email" required className="w-full p-2 dark:text-black border rounded" onChange={handleChange} />
         <h1 className="font-bold">Password :</h1>
         <input type="password" name="password" placeholder="Password" required className="w-full dark:text-black p-2 border rounded" onChange={handleChange} />
+        <h1 className="font-bold">Role:</h1>
+        <select
+          name="role"
+          value={user.role}
+          onChange={handleChange}
+          className="w-full dark:text-black p-2 border rounded"
+          required
+        >
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
         <div className='text-center'>
         <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded-lg">Register</button>
         </div>
