@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useCart } from "../../context/CartContext";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MensClothing() {
   const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ export default function MensClothing() {
         {products.map((product) => (
           <div key={product.id} className="border p-4 rounded-lg shadow-md">
             <Link href={`/product/${product.id}`}>
-              <img src={product.image} alt={product.title} className="h-40 mx-auto cursor-pointer" />
+              <Image src={product.image} alt={product.title} width={130} height={100} className="h-40 mx-auto cursor-pointer" />
             </Link>
             <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
             <p className="text-green-600 font-bold">${product.price}</p>

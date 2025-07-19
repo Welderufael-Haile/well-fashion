@@ -4,7 +4,6 @@ const categories = [
   { name: "All", path: "/catagory/all" },
   { name: "Men's Clothes", path: "/catagory/men" },
   { name: "Women's Clothes", path: "/catagory/women" },
-  { name: "Men's Shoes", path: "/catagory/shoes" },
   { name: "jewelery", path: "/catagory/jewelery" },
   { name: "Children's Clothes", path: "/catagory/children" },
 ];

@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Logout from ".././admin/componenets/Logout";
+import Image from "next/image";
 //import dynamic from "next/dynamic";
 
 // const GoogleMapReact = dynamic(() => import("google-map-react"), { ssr: false });
@@ -85,7 +86,7 @@ export default function CartPage() {
         <div className="space-y-4">
           {cart.map((item) => (
             <div key={item.id} className="space-y-4 md:flex lg:flex items-center justify-between border p-4 rounded-lg shadow-md">
-              <img src={item.image} alt={item.title} className="h-20 w-20 object-contain" />
+              <img src={item.image} alt={item.title}  className="h-20 w-20 object-contain" />
               <div className="flex-1 px-4">
                 <h2 className="text-lg font-semibold">{item.title}</h2>
                 <p className="text-red-600">${item.price}</p>
@@ -143,7 +144,7 @@ export default function CartPage() {
               {orderDetails.paymentMethod === "bank" && (
                 <div className="p-2 bg-gray-100 rounded-md mb-2">
                   <p className="font-semibold">Bank Account Details:</p>
-                  <p>Account No: <strong>1234 5678 9012</strong></p>
+                  <p>Account No: <strong>1000 22 5678 9012</strong></p>
                   <p>Bank Name: <strong>CBE Bank</strong></p>
                 </div>
               )}
